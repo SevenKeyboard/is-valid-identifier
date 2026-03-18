@@ -9,6 +9,8 @@
 ; Documentation / References:
 ;   Details - Names
 ;     https://www.autohotkey.com/docs/v2/Concepts.htm#names
+;   Way to validate variable name validity for v2?
+;     https://www.autohotkey.com/boards/viewtopic.php?t=140363
 ;==============================================================
 
 /*
