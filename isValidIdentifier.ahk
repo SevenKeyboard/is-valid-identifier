@@ -26,11 +26,11 @@ class VersionManager_isValidIdentifier
     static _ := this._init()
     static _init()    {
         global
-        ISVALIDIDENTIFIER_VERSION := "1.0.0"
+        ISVALIDIDENTIFIER_VERSION := "1.0.1"
     }
 }
 isValidIdentifier(name)    {
-    static identifierPattern := "\A[A-Z_a-z\x80-\x{D7FF}\x{E000}-\x{10FFFF}][0-9A-Z_a-z\x80-\x{D7FF}\x{E000}-\x{10FFFF}]*\z"
+    static identifierPattern := "\A[A-Z_a-z[:^ascii:]][0-9A-Z_a-z[:^ascii:]]*\z"
         ,keywords := map("as",true, "and",true, "contains",true, "false",true, "in",true
             ,"is",true, "isset",true, "not",true, "or",true, "super",true
             ,"true",true, "unset",true
